@@ -9,12 +9,12 @@ int main(int argc, char *argv[])
     
     while(fgets(str, sizeof(str), stdin)){
         int n = atoi(str);
-        if(n > 0 && i == 0 && n < 100)
+        if(n > 0 && i == 0 && n <= 100)
         {
            	array[0] = n;
           	i++;
        	}
-	else if(n > 0 && i > 0 && n < 100)
+	else if(n > 0 && i > 0 && n <= 100)
         {
             	for(j = i; j > 0; j--)
             	{
